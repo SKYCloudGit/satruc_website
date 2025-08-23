@@ -6,9 +6,9 @@ import './Hero.css';
 
 
 const imageList = [
-  '../../public/test.jpg',
-  '../../public/view1.jpg',
-  '../../public/view2.jpg',
+  '../../public/Images/test.jpg',
+  '../../public/Images/view1.jpg',
+  '../../public/Images/view2.jpg',
 ];
 
 const Hero = () => {

@@ -12,10 +12,10 @@ import { Card, CardContent } from '@/components/ui/card';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
-import bgImage from "../../public/supplychain.jpg";
+import bgImage from "../../public/Images/supplychain.jpg";
 import { useInView } from 'react-intersection-observer';
-import Image1 from "../../public/supplychain1.jpg";
-import Image2 from "../../public/supplychain2.jpg";
+import Image1 from "../../public/Images/supplychain1.jpg";
+import Image2 from "../../public/Images/supplychain2.jpg";
 
 import FeatureGrid from '@/components/FeaturesGrid';
 

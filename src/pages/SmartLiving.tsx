@@ -12,10 +12,10 @@ import { Card, CardContent } from '@/components/ui/card';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
-import bgImage from "../../public/smartliving.avif";
+import bgImage from "../../public/Images/smartliving.avif";
 import { useInView } from 'react-intersection-observer';
-import Image1 from "../../public/smartliving1.avif";
-import Image2 from "../../public/smartliving2.avif";
+import Image1 from "../../public/Images/smartliving1.avif";
+import Image2 from "../../public/Images/smartliving2.avif";
 import FeatureGrid from '@/components/FeaturesGrid';
 
 

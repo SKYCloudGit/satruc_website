@@ -124,7 +124,7 @@ For a decade, Satruc Appliances has pioneered precision manufacturing, setting i
             <div className="order-1 lg:order-2 relative">
               <div className="relative rounded-xl overflow-hidden shadow-xl">
                 <img 
-                  src="satruc.jpeg" 
+                  src="../public/Images/satruc.jpeg" 
                   alt="Satruc Manufacturing Facility" 
                   className="w-full h-auto"
                 />

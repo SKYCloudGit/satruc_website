@@ -18,13 +18,13 @@ const teamMembers = [
   {
     name: '',
     position: 'QA Team',
-    image: '/OurTeam.jpeg',
+    image: '/Images/OurTeam.jpeg',
     bio: 'Michael specializes in frontend development and user experience design.',
   },
   {
     name: '',
     position: ' Designe and Development',
-    image: '/OurTeam2.jpeg',
+    image: '/Images/OurTeam2.jpeg',
     bio: 'Emily crafts intuitive and engaging user interfaces for our applications.',
   },
  
@@ -91,7 +91,7 @@ const OurTeam = () => {
     {/* Image */}
     <div className="w-full flex justify-center">
       <img
-        src="../public/Dinesh.jpeg"
+        src="../public/Images/Dinesh.jpeg"
         alt="CEO"
         className="w-full max-w-sm rounded-lg shadow-md object-cover"
       />
