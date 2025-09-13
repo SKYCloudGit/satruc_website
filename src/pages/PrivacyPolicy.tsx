@@ -7,100 +7,217 @@ const PrivacyPolicy = () => {
     <div className="min-h-screen flex flex-col">
       <Navbar />
       <section className="pt-32 pb-20 bg-gradient-to-br from-satruc-50 to-white">
-        <h1 className="mb-4 font-bold text-3xl">Privacy Policy</h1>
-
         <div className="container py-5">
- 
+          <h1 className="mb-4 font-bold text-3xl">Privacy Policy</h1>
+          <p className="mb-6">Satruc Appliances Private Limited</p>
 
-          <b className="mt-4">1. Purpose and Commitment</b>
+          <h2 className="font-semibold mt-6">Introduction</h2>
           <p>
-            At Satruc Appliances Private Limited (“Satruc”, “we”, “our” or “us”), we value your privacy and are committed to safeguarding the personal data you share with us. This Privacy Policy explains how we collect, use, disclose, and protect your information when you visit our websites, interact with us offline, or engage with our services.
+            At Satruc Appliances Private Limited ("we", "our", or "us"), we are
+            committed to protecting your privacy and personal information. This
+            Privacy Policy explains how we collect, use, store, and safeguard
+            your information when you interact with our website, services, or
+            platform. By using our services, you agree to the practices
+            described in this policy.
           </p>
 
-          <b className="mt-4">2. Scope of the Policy</b>
-          <p>This policy applies to:</p>
+          <h2 className="font-semibold mt-6">Information We Collect</h2>
+          <p>We may collect both personal and non-personal data as outlined below:</p>
+
+          <h3 className="mt-4 font-medium">Personal Information</h3>
           <ul className="list-disc list-inside">
-            <li>Visitors to our websites</li>
-            <li>Job applicants applying through our Careers page or contact forms</li>
-            <li>Vendors, customers, and business partners who interact with us</li>
+            <li>Name</li>
+            <li>Address</li>
+            <li>Phone number</li>
+            <li>Email address</li>
+            <li>Fax number</li>
+            <li>Billing and payment information</li>
+            <li>Dates and types of services used</li>
+            <li>Customer service interactions</li>
           </ul>
 
-          <b className="mt-4">3. Information We Collect</b>
-          <p>Depending on how you interact with us, we may collect:</p>
+          <h3 className="mt-4 font-medium">Usage Data</h3>
           <ul className="list-disc list-inside">
-            <li><strong>Personal Information:</strong> Name, email, phone, educational qualifications, resumes, contact details, and other data related to your interaction with us.</li>
-            <li><strong>Business Information:</strong> Order history, vendor credentials, tax details, and related information.</li>
+            <li>Pages visited</li>
+            <li>Time spent on each page</li>
+            <li>Navigation actions</li>
+            <li>Links clicked</li>
           </ul>
 
-          <b className="mt-4">4. How We Use Your Information</b>
-          <p>We use the collected information for purposes such as:</p>
+          <h3 className="mt-4 font-medium">Technical Data</h3>
           <ul className="list-disc list-inside">
-            <li>Responding to business, vendor, or customer inquiries</li>
-            <li>Processing job applications</li>
-            <li>Fulfilling product or service orders</li>
-            <li>Improving our website and services</li>
-            <li>Ensuring compliance with legal and regulatory obligations</li>
-            <li>Internal reporting, audits, or performance analysis</li>
+            <li>IP address</li>
+            <li>Browser type and version</li>
+            <li>Device type and operating system</li>
+            <li>Referring websites</li>
+            <li>Device identifiers</li>
           </ul>
 
-          <b className="mt-4">5. Legal Basis for Processing</b>
-          <p>We process your data under the following legal bases:</p>
-          <ul className="list-disc list-inside">
-            <li>Your consent (e.g., submitting a form)</li>
-            <li>For fulfilling a contract or commercial engagement</li>
-            <li>To comply with legal obligations</li>
-            <li>Our legitimate business interests in managing and improving our operations</li>
-          </ul>
-
-          <b className="mt-4">6. Data Sharing and Disclosure</b>
-          <p>We do not sell or rent your personal information.</p>
-          <p>We may share your data with:</p>
-          <ul className="list-disc list-inside">
-            <li>Our internal departments and authorized personnel</li>
-            <li>Third-party service providers under strict confidentiality agreements</li>
-            <li>Government or regulatory authorities as required by law</li>
-            <li>Partners or consultants assisting in business functions</li>
-          </ul>
-
-          <b className="mt-4">7. Data Retention</b>
+          <h3 className="mt-4 font-medium">Cookies and Tracking Technologies</h3>
           <p>
-            We retain your personal information only as long as necessary to fulfil the purposes outlined in this policy, or as mandated by applicable laws (e.g., labor, tax, or contractual obligations).
+            We use cookies and similar technologies (e.g., pixels, web beacons)
+            to improve your browsing experience, analyse website performance,
+            and personalize content.
+          </p>
+          <p>Types of Cookies:</p>
+          <ul className="list-disc list-inside">
+            <li>Essential Cookies – Required for login and core functionality</li>
+            <li>Performance Cookies – Help track user behaviour and website performance</li>
+            <li>Functional Cookies – Store user preferences (e.g., language)</li>
+            <li>Marketing Cookies – Used for delivering relevant advertisements</li>
+          </ul>
+          <p>
+            You can manage cookie settings through your browser. Disabling
+            cookies may limit some functionality.
           </p>
 
-          <b className="mt-4">8. Data Security</b>
-          <p>We maintain robust security measures to protect your data, including:</p>
+          <h2 className="font-semibold mt-6">How We Use Your Information</h2>
           <ul className="list-disc list-inside">
-            <li>Role-based access control</li>
-            <li>Secure cloud storage and encrypted connections (HTTPS)</li>
-            <li>Internal data protection training and controls</li>
-            <li>Regular system audits and data access logging</li>
+            <li>Provide, manage, and improve our services</li>
+            <li>Process payments and billing</li>
+            <li>Communicate with you for customer service, updates, or marketing (if opted in)</li>
+            <li>Understand user behaviour and trends</li>
+            <li>Comply with legal and regulatory obligations</li>
+            <li>Prevent fraudulent activity or abuse</li>
+            <li>Respond to user inquiries or support requests</li>
           </ul>
 
-          <b className="mt-4">9. Your Rights</b>
-          <p>Under applicable Indian privacy law, you have the right to:</p>
+          <h2 className="font-semibold mt-6">Disclosure of Information</h2>
+          <p>We do not sell your personal data. We may share your data:</p>
           <ul className="list-disc list-inside">
-            <li>Request access to your personal data</li>
-            <li>Correct or update your data</li>
-            <li>Withdraw consent for specific processing</li>
-            <li>Request deletion (where applicable)</li>
+            <li>With trusted service providers (e.g., payment processors, IT service providers)</li>
+            <li>To comply with legal requirements or court orders</li>
+            <li>To protect rights, safety, or enforce policies</li>
+            <li>In connection with a merger, acquisition, or asset transfer</li>
+            <li>With your consent</li>
           </ul>
-          <p>To exercise these rights, please contact us at <a href="mailto:hr@satrucindia.com" className="text-blue-600 underline">hr@satrucindia.com</a>.</p>
-
-          <b className="mt-4">10. Children’s Privacy</b>
           <p>
-            Our websites and services are not directed at individuals under the age of 18. We do not knowingly collect data from children. If we become aware of such collection, we will promptly delete the information.
+            We may share aggregated or anonymized data that does not identify
+            individuals.
           </p>
 
-          <b className="mt-4">11. Changes to This Policy</b>
+          <h2 className="font-semibold mt-6">Your Rights and Choices</h2>
+          <p>Depending on your location, you may have the following rights:</p>
+          <ul className="list-disc list-inside">
+            <li>Access your personal data</li>
+            <li>Correct or update inaccurate information</li>
+            <li>Request deletion of your data</li>
+            <li>Restrict or object to data processing</li>
+            <li>Withdraw consent at any time</li>
+            <li>Request a copy of your data in a portable format</li>
+            <li>File a complaint with a supervisory authority</li>
+          </ul>
           <p>
-            We may update this Privacy Policy periodically to reflect changes in our practices, technology, or legal requirements. We encourage you to review this page regularly.
+            To exercise these rights, please contact us at{" "}
+            <a
+              href="mailto:hr@satrucindia.com"
+              className="text-blue-600 underline"
+            >
+              hr@satrucindia.com
+            </a>.
           </p>
 
-          <b className="mt-4">12. Contact Us</b>
+          <h2 className="font-semibold mt-6">Children's Privacy</h2>
           <p>
-            If you have questions or concerns about this policy or wish to exercise your data rights, contact us at:
+            Our website and services are not directed to children under the age
+            of 18. We do not knowingly collect personal information from minors.
+            If we discover that such data has been collected inadvertently, we
+            will promptly delete it.
           </p>
-         
+
+          <h2 className="font-semibold mt-6">International Data Transfers</h2>
+          <p>
+            If your information is transferred outside your country of
+            residence, we ensure that appropriate safeguards are in place to
+            maintain the level of protection required by applicable data
+            protection laws.
+          </p>
+
+          <h2 className="font-semibold mt-6">Third-Party Links</h2>
+          <p>
+            Our website may contain links to third-party websites. We are not
+            responsible for the content or privacy practices of these sites. We
+            encourage users to review the privacy policies of any external
+            websites they visit.
+          </p>
+
+          <h2 className="font-semibold mt-6">Data Security</h2>
+          <p>We use industry-standard security measures to protect your data, including:</p>
+          <ul className="list-disc list-inside">
+            <li>Secure Servers</li>
+            <li>SSL Encryption</li>
+            <li>Access Controls</li>
+            <li>Regular Security Audits</li>
+            <li>Employee Privacy Training</li>
+          </ul>
+          <p>
+            While we take these precautions, no method of transmission or
+            storage is 100% secure.
+          </p>
+
+          <h2 className="font-semibold mt-6">Data Retention</h2>
+          <p>We retain personal information only as long as necessary to:</p>
+          <ul className="list-disc list-inside">
+            <li>Provide our services</li>
+            <li>Fulfil contractual or legal obligations</li>
+            <li>Resolve disputes</li>
+            <li>Enforce our agreements</li>
+          </ul>
+          <p>
+            Once data is no longer needed, we securely delete or anonymize it.
+          </p>
+
+          <h2 className="font-semibold mt-6">Log Files</h2>
+          <p>
+            We may use IP addresses and device identifiers for analytics,
+            troubleshooting, and monitoring website usage. This data may be
+            linked to personal information during technical investigations.
+          </p>
+
+          <h2 className="font-semibold mt-6">Email Communications</h2>
+          <p>
+            Customers may receive emails related to transactions, system
+            updates, or promotional offers (if subscribed). You may unsubscribe
+            from marketing emails at any time by following the opt-out
+            instructions in the email or contacting{" "}
+            <a
+              href="mailto:hr@satrucindia.com"
+              className="text-blue-600 underline"
+            >
+              hr@satrucindia.com
+            </a>
+            . Important service-related notifications cannot be opted out of.
+          </p>
+
+          <h2 className="font-semibold mt-6">Policy Changes</h2>
+          <p>
+            We may revise this Privacy Policy periodically. Any changes will be
+            posted here with an updated effective date. We recommend checking
+            this policy regularly for updates.
+          </p>
+
+          <h2 className="font-semibold mt-6">Contact Us</h2>
+          <p>
+            If you have any questions, concerns, or requests regarding your
+            personal information or this Privacy Policy, please contact:
+          </p>
+          <p>Satruc Appliances Private Limited</p>
+          <p>
+            Email:{" "}
+            <a
+              href="mailto:hr@satrucindia.com"
+              className="text-blue-600 underline"
+            >
+              hr@satrucindia.com
+            </a>
+          </p>
+
+          <h2 className="font-semibold mt-6">Conclusion</h2>
+          <p>
+            We value the trust you place in us and are committed to maintaining
+            the confidentiality and security of your personal data. Thank you
+            for choosing Satruc Appliances Private Limited.
+          </p>
         </div>
       </section>
       <Footer />

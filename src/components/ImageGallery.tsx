@@ -21,9 +21,10 @@ const ImageGallery = () => {
           <div className="overflow-hidden rounded-lg shadow-md">
             <AspectRatio ratio={4/3}>
               <img 
-                src="/calibration.jpeg" 
+                src="../assets/calibration.jpeg" 
                 alt="calibration room for testing" 
                 className="object-cover w-full h-full hover:scale-105 transition-transform duration-500"
+                loading='lazy'
               />
                <div className="absolute bottom-2 left-2 bg-black/50 text-white px-3 py-1 text-sm font-medium rounded">
       EOL
@@ -33,8 +34,9 @@ const ImageGallery = () => {
           <div className="overflow-hidden rounded-lg shadow-md">
             <AspectRatio ratio={4/3}>
               <img 
-                src="/calibration1.jpeg" 
+                src="../assets/calibration1.jpeg" 
                 alt="calibaration room1" 
+                loading='lazy'
                 className="object-cover w-full h-full hover:scale-105 transition-transform duration-500"
               />
                <div className="absolute bottom-2 left-2 bg-black/50 text-white px-3 py-1 text-sm font-medium rounded">
@@ -46,8 +48,9 @@ const ImageGallery = () => {
           <div className="overflow-hidden rounded-lg shadow-md">
             <AspectRatio ratio={4/3}>
               <img 
-                src="/automachine.jpeg" 
+                src="../assets/automachine.jpeg" 
                 alt="automachine rig" 
+                loading='lazy'
                 className="object-cover w-full h-full hover:scale-105 transition-transform duration-500"
               />
                <div className="absolute bottom-2 left-2 bg-black/50 text-white px-3 py-1 text-sm font-medium rounded">
@@ -58,8 +61,9 @@ const ImageGallery = () => {
           <div className="overflow-hidden rounded-lg shadow-md">
             <AspectRatio ratio={4/3}>
               <img 
-                src="/printers.jpeg" 
+                src="../assets/printers.jpeg" 
                 alt="Printers" 
+                loading='lazy'
                 className="object-cover w-full h-full hover:scale-105 transition-transform duration-500"
               />
               <div className="absolute bottom-2 left-2 bg-black/50 text-white px-3 py-1 text-sm font-medium rounded">
@@ -70,8 +74,9 @@ const ImageGallery = () => {
           <div className="overflow-hidden rounded-lg shadow-md">
             <AspectRatio ratio={4/3}>
               <img 
-                src="/regulators.jpeg" 
+                src="../assets/regulators.jpeg" 
                 alt="Gas regulators" 
+                loading='lazy'
                 className="object-cover w-full h-full hover:scale-105 transition-transform duration-500"
               />
               <div className="absolute bottom-2 left-2 bg-black/50 text-white px-3 py-1 text-sm font-medium rounded">
@@ -83,8 +88,9 @@ const ImageGallery = () => {
           <div className="overflow-hidden rounded-lg shadow-md">
             <AspectRatio ratio={4/3}>
               <img 
-                src="/gasbody.jpeg" 
+                src="../assets/gasbody.jpeg" 
                 alt="Gas body table" 
+                loading='lazy'
                 className="object-cover w-full h-full hover:scale-105 transition-transform duration-500"
               />
               <div className="absolute bottom-2 left-2 bg-black/50 text-white px-3 py-1 text-sm font-medium rounded">

@@ -23,7 +23,7 @@ const Products = () => {
       id: '1',
       name: 'SmartFlow Pro 5000',
       description: 'High-precision electric gas regulator for industrial processes requiring exact flow control.',
-      image: 'https://images.unsplash.com/photo-1581092921461-7d65ca45ec1e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
+      image: 'https://assets.unsplash.com/photo-1581092921461-7d65ca45ec1e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
       features: [
         'Pressure range: 0-100 bar',
         'Digital flow monitoring',
@@ -38,7 +38,7 @@ const Products = () => {
       id: '2',
       name: 'PressGuard X400',
       description: 'Advanced safety regulator with multiple redundant systems for critical applications.',
-      image: 'https://images.unsplash.com/photo-1581092580838-a0d040d0c2a4?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
+      image: 'https://assets.unsplash.com/photo-1581092580838-a0d040d0c2a4?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
       features: [
         'Triple redundant safety',
         'Automatic emergency shutdown',
@@ -53,7 +53,7 @@ const Products = () => {
       id: '3',
       name: 'MicroFlow E-Series',
       description: 'Compact electric regulator for commercial and light industrial applications.',
-      image: 'https://images.unsplash.com/photo-1581093196277-9f608bb3fdd4?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
+      image: 'https://assets.unsplash.com/photo-1581093196277-9f608bb3fdd4?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
       features: [
         'Space-saving design',
         'Low power consumption',
@@ -67,7 +67,7 @@ const Products = () => {
       id: '4',
       name: 'IndustrialMax G2',
       description: 'Heavy-duty gas regulator designed for continuous operation in demanding industrial environments.',
-      image: 'https://images.unsplash.com/photo-1581093458791-2aa7b4df31b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
+      image: 'https://assets.unsplash.com/photo-1581093458791-2aa7b4df31b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
       features: [
         'High flow capacity',
         'Vibration resistant',
@@ -81,7 +81,7 @@ const Products = () => {
       id: '5',
       name: 'PreciTech Mini',
       description: 'Miniaturized pressure regulator for laboratory and medical equipment applications.',
-      image: 'https://images.unsplash.com/photo-1581094487519-8174d49432b4?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
+      image: 'https://assets.unsplash.com/photo-1581094487519-8174d49432b4?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
       features: [
         'Ultra-compact design',
         'High precision control',
@@ -95,7 +95,7 @@ const Products = () => {
       id: '6',
       name: 'SafeFlow Monitor',
       description: 'Intelligent gas regulation system with integrated leak detection and automatic shutdown.',
-      image: 'https://images.unsplash.com/photo-1581093804175-0f39bf0d4eee?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
+      image: 'https://assets.unsplash.com/photo-1581093804175-0f39bf0d4eee?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
       features: [
         'Continuous leak monitoring',
         'Emergency shut-off valve',
@@ -110,7 +110,7 @@ const Products = () => {
       id: '7',
       name: 'CommercialPro C750',
       description: 'Reliable gas pressure regulation for commercial cooking and heating applications.',
-      image: 'https://images.unsplash.com/photo-1581093805715-1012ca81e456?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
+      image: 'https://assets.unsplash.com/photo-1581093805715-1012ca81e456?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
       features: [
         'CSA certified',
         'Easy service access',
@@ -124,7 +124,7 @@ const Products = () => {
       id: '8',
       name: 'LabMaster V2',
       description: 'Ultra-precise regulator for scientific research and calibration environments.',
-      image: 'https://images.unsplash.com/photo-1581093577421-f561a654a353?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
+      image: 'https://assets.unsplash.com/photo-1581093577421-f561a654a353?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
       features: [
         '0.01% accuracy',
         'Digital calibration',
@@ -139,7 +139,7 @@ const Products = () => {
       id: '9',
       name: 'RubiconX Heavy Duty',
       description: 'Extreme environment gas regulator for oil & gas, mining, and chemical processing applications.',
-      image: 'https://images.unsplash.com/photo-1581093579830-9a6689cd159d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
+      image: 'https://assets.unsplash.com/photo-1581093579830-9a6689cd159d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
       features: [
         'Explosion-proof certification',
         'Corrosion-resistant alloys',

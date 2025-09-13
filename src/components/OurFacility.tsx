@@ -22,8 +22,9 @@ const OurFacility = () => {
           <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
             <AspectRatio ratio={2/1}>
               <img 
-                src="/DandD.jpeg" 
+                src="../assets/DandD.jpeg" 
                 alt="Industrial manufacturing plant" 
+                loading='lazy'
                 className="object-cover w-full h-full"
               />
             </AspectRatio>
@@ -35,8 +36,9 @@ const OurFacility = () => {
           <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
             <AspectRatio ratio={2/1}>
               <img 
-                src="/CalibrationRoom.jpeg" 
+                src="../assets/CalibrationRoom.jpeg" 
                 alt="Energy production facility" 
+                loading='lazy'
                 className="object-cover w-full h-full"
               />
             </AspectRatio>
@@ -48,8 +50,9 @@ const OurFacility = () => {
           <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
             <AspectRatio ratio={2/1}>
               <img 
-                src="/package.jpeg" 
+                src="../assets/package.jpeg" 
                 alt="Chemical processing facility" 
+                loading='lazy'
                 className="object-cover w-full h-full"
               />
             </AspectRatio>

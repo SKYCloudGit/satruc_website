@@ -7,7 +7,7 @@ import ImageGallery from '@/components/ImageGallery';
 import KeyFeatures from '@/components/KeyFeatures';
 import FeaturedProducts from '@/components/FeaturedProducts';
 import TechnologyShowcase from '@/components/TechnologyShowcase';
-import ApplicationImages from '@/components/OurFacility';
+import Applicationassets from '@/components/OurFacility';
 import CtaSection from '@/components/CtaSection';
 import OurFacility from '@/components/OurFacility';
 import FeatureGrid from '@/components/FeaturesGrid';
@@ -56,7 +56,7 @@ const Facility = () => {
       {/* Technology Showcase */}
       {/* <TechnologyShowcase /> */}
       
-      {/* Application Images */}
+      {/* Application assets */}
       <OurFacility />
       
       {/* CTA Section */}

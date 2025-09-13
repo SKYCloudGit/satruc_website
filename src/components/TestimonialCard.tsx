@@ -75,6 +75,7 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
                 <img 
                   src={avatar} 
                   alt={name} 
+                  loading='lazy'
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -101,6 +102,7 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
               <img 
                 src={companyLogo} 
                 alt={company} 
+                loading='lazy'
                 className="h-8 w-auto object-contain" 
               />
             </div>

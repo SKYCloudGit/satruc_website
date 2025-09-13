@@ -24,6 +24,7 @@ const TechnologyShowcase = () => {
               <img 
                 src="photo1.jpg" 
                 alt="Electric gas regulator internal components" 
+                loading='lazy'
                 className="object-cover w-full h-full"
               />
             </AspectRatio>
@@ -36,7 +37,8 @@ const TechnologyShowcase = () => {
             <AspectRatio ratio={16/9}>
               <img 
                 src="photo4.jpg" 
-                alt="Control system interface" 
+                alt="Control system interface"
+                loading='lazy'
                 className="object-cover w-full h-full"
               />
             </AspectRatio>

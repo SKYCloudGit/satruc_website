@@ -12,24 +12,24 @@ import { Card, CardContent } from '@/components/ui/card';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
-import bgImage from "../../public/Images/pcb.jpg";
+import bgImage from "../../src/assets/pcb.jpg";
 import { useInView } from 'react-intersection-observer';
-import Image1 from "../../public/Images/pcb1.jpg";
-import Image2 from "../../public/Images/pcb2.jpg";
+import Image1 from "../../src/assets/pcb1.jpg";
+import Image2 from "../../src/assets/pcb2.jpg";
 import FeatureGrid from '@/components/FeaturesGrid';
 
 
 
 
 export default function Pcb() {
-  // ✅ Define the 2 images you want to swap on scroll
-  const images = [
+  // ✅ Define the 2 assets you want to swap on scroll
+  const assets = [
     Image1,
     Image2
   ];
 
   // ✅ Default active image
-  const [activeImage, setActiveImage] = useState(images[0]);
+  const [activeImage, setActiveImage] = useState(assets[0]);
 
   // ✅ Set up intersection observers for text sections
   const [ref1, inView1] = useInView({ threshold: 0.3 });
@@ -38,9 +38,9 @@ export default function Pcb() {
   // ✅ Change the image when sections come into view
   useEffect(() => {
     if (inView2) {
-      setActiveImage(images[1]);
+      setActiveImage(assets[1]);
     } else if (inView1) {
-      setActiveImage(images[0]);
+      setActiveImage(assets[0]);
     }
   }, [inView1, inView2]);
 
@@ -75,6 +75,7 @@ export default function Pcb() {
             <img 
               src={bgImage} 
               alt="Quality Management" 
+              loading='lazy'
               className="max-w-full h-auto rounded-lg shadow-lg"
             />
           </div>
@@ -90,6 +91,7 @@ export default function Pcb() {
       <img
         src={activeImage}
         alt="Scroll-triggered"
+        loading='lazy'
         className="w-full h-screen object-cover"
       />
     </div>
@@ -98,7 +100,7 @@ export default function Pcb() {
 <div className="w-full md:w-1/2 flex flex-col">
      <div ref={ref1} className="p-8 text-center md:text-left min-h-screen flex flex-col justify-center">
   <h2 className="text-3xl font-bold mb-4">
-    Quality Management in PCB Manufacturing
+     PCB Manufacturing with Quality Management
   </h2>
   <p className="text-lg md:text-xl text-gray-600 leading-relaxed">
     At Satruc, quality is at the core of our PCB manufacturing operations. 

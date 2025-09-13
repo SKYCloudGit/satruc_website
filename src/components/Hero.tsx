@@ -1,14 +1,13 @@
-import React, { useEffect, useRef, useState } from 'react';
-import { Link } from 'react-router-dom';
-import { ArrowRight } from 'lucide-react';
-import { cn } from '@/lib/utils';
-import './Hero.css';
-
+import React, { useEffect, useRef, useState } from "react";
+import { Link } from "react-router-dom";
+import { ArrowRight } from "lucide-react";
+import { cn } from "@/lib/utils";
+import "./Hero.css";
 
 const imageList = [
-  '../../public/Images/test.jpg',
-  '../../public/Images/view1.jpg',
-  '../../public/Images/view2.jpg',
+  "../assets/test.jpg",
+  "../assets/view1.jpg",
+  "../assets/view2.jpg",
 ];
 
 const Hero = () => {
@@ -28,21 +27,24 @@ const Hero = () => {
     const handleMouseMove = (e: MouseEvent) => {
       if (!heroRef.current) return;
       const { clientX, clientY } = e;
-      const { left, top, width, height } = heroRef.current.getBoundingClientRect();
+      const { left, top, width, height } =
+        heroRef.current.getBoundingClientRect();
       const x = (clientX - left) / width;
       const y = (clientY - top) / height;
 
-      const items = heroRef.current.querySelectorAll('.parallax-item');
+      const items = heroRef.current.querySelectorAll(".parallax-item");
       items.forEach((item) => {
-        const speed = parseFloat((item as HTMLElement).dataset.speed || '0');
+        const speed = parseFloat((item as HTMLElement).dataset.speed || "0");
         const offsetX = (x - 0.5) * speed;
         const offsetY = (y - 0.5) * speed;
-        (item as HTMLElement).style.transform = `translate(${offsetX}px, ${offsetY}px)`;
+        (
+          item as HTMLElement
+        ).style.transform = `translate(${offsetX}px, ${offsetY}px)`;
       });
     };
 
-    window.addEventListener('mousemove', handleMouseMove);
-    return () => window.removeEventListener('mousemove', handleMouseMove);
+    window.addEventListener("mousemove", handleMouseMove);
+    return () => window.removeEventListener("mousemove", handleMouseMove);
   }, []);
 
   return (
@@ -51,24 +53,31 @@ const Hero = () => {
       className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 bg-black text-white"
     >
       {/* Sliding Background */}
-   {/* Background Rendering */}
-<div className="absolute inset-0 z-0">
-  {imageList.map((src, index) => (
-    currentImage === index ? (
-      <div
-        key={index}
-        className={cn(
-          'absolute inset-0 w-full h-full transition-opacity duration-1000 ease-in-out',
-          currentImage === 0
-            ? 'bg-gradient-radial from-black/80 via-black/90 to-black backdrop-blur-md'
-            : ''
+      {/* Background Rendering */}
+      <div className="absolute inset-0 z-0">
+        {imageList.map((src, index) =>
+          currentImage === index ? (
+            <div
+              key={index}
+              className={cn(
+                "absolute inset-0 w-full h-full transition-opacity duration-1000 ease-in-out",
+                currentImage === 0
+                  ? "bg-gradient-radial from-black/80 via-black/90 to-black backdrop-blur-md"
+                  : ""
+              )}
+              style={
+                currentImage === 0
+                  ? {}
+                  : {
+                      backgroundImage: `url(${src})`,
+                      backgroundSize: "cover",
+                      backgroundPosition: "center",
+                    }
+              }
+            />
+          ) : null
         )}
-        style={currentImage === 0 ? {} : { backgroundImage: `url(${src})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
-      />
-    ) : null
-  ))}
-</div>
-
+      </div>
 
       {/* Parallax Bubbles */}
       <div className="absolute inset-0 overflow-hidden z-20 pointer-events-none">
@@ -89,11 +98,15 @@ const Hero = () => {
         </span>
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight tracking-tight">
           Your Trusted Partner in
-          <span className="block text-satruc-accent-400">Precision Electronics Manufacturing</span>
-          for Industrial & Consumer Applications
+          <span className="block text-satruc-accent-400">
+            Precision Electronic Products Manufacturing
+          </span>
+          for Consumer Applications
         </h1>
         <p className="text-lg mt-6 text-white/90 max-w-2xl mx-auto">
-          Satruc Appliances delivers precision, quality, and custom solutions from prototype to production. Partner with us—where your vision becomes a manufactured reality.
+          Satruc Appliances delivers precision, quality, and custom solutions
+          from prototype to production. Partner with us—where your vision
+          becomes a manufactured reality.
         </p>
         <div className="mt-8">
           <Link

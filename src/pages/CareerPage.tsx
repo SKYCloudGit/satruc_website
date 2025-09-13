@@ -205,7 +205,7 @@ const Careers = () => {
               {/* Office Locations */}
               <div className="bg-white rounded-lg shadow-sm p-6">
                 <h3 className="text-lg font-semibold text-satruc-900 mb-4">
-                  Our Office
+                  Our Factory
                 </h3>
                 <div className="space-y-6">
                   {factoryLocations.map((office, index) => (

@@ -12,10 +12,10 @@ import { Card, CardContent } from '@/components/ui/card';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
-import bgImage from "../../public/Images/logistics.jpg";
+import bgImage from "../../src/assets/logistics.jpg";
 import { useInView } from 'react-intersection-observer';
-import Image1 from "../../public/Images/logistics1.jpg";
-import Image2 from "../../public/Images/logistics3.jpg";
+import Image1 from "../../src/assets/logistics1.jpg";
+import Image2 from "../../src/assets/supplychain2.jpg";
 
 import FeatureGrid from '@/components/FeaturesGrid';
 
@@ -23,14 +23,14 @@ import FeatureGrid from '@/components/FeaturesGrid';
 
 
 export default function FullfillmentLogistics() {
-  // ✅ Define the 2 images you want to swap on scroll
-  const images = [
+  // ✅ Define the 2 assets you want to swap on scroll
+  const assets = [
     Image1,
     Image2
   ];
 
   // ✅ Default active image
-  const [activeImage, setActiveImage] = useState(images[0]);
+  const [activeImage, setActiveImage] = useState(assets[0]);
 
   // ✅ Set up intersection observers for text sections
   const [ref1, inView1] = useInView({ threshold: 0.3 });
@@ -39,9 +39,9 @@ export default function FullfillmentLogistics() {
   // ✅ Change the image when sections come into view
   useEffect(() => {
     if (inView2) {
-      setActiveImage(images[1]);
+      setActiveImage(assets[1]);
     } else if (inView1) {
-      setActiveImage(images[0]);
+      setActiveImage(assets[0]);
     }
   }, [inView1, inView2]);
 
@@ -76,6 +76,7 @@ At Satruc, we extend our manufacturing excellence into fulfillment and third-par
             <img 
               src={bgImage} 
               alt="Quality Management" 
+              loading='lazy'
               className="max-w-full h-auto rounded-lg shadow-lg"
             />
           </div>
@@ -91,6 +92,7 @@ At Satruc, we extend our manufacturing excellence into fulfillment and third-par
       <img
         src={activeImage}
         alt="Scroll-triggered"
+        loading='lazy'
         className="w-full h-screen object-cover"
       />
     </div>
@@ -125,35 +127,35 @@ At Satruc, we extend our manufacturing excellence into fulfillment and third-par
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-26">
               <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-                Our Quality Assurance Process
+                Our Fullfillment Process
               </h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                We implement rigorous quality control measures at every stage of manufacturing to ensure excellence.
+  From inventory storage to last-mile delivery, our logistics workflows are optimized for accuracy, speed, and reliability—ensuring every order reaches customers on time and in perfect condition.
               </p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               {[
-                {
-                  icon: CheckCircle,
-                  title: "Precision Testing",
-                  description: "Advanced testing protocols ensure every product meets exact specifications"
-                },
-                {
-                  icon: Shield,
-                  title: "ISO Certified",
-                  description: "Multiple international certifications validate our quality management systems"
-                },
-                {
-                  icon: Award,
-                  title: "Excellence Standards",
-                  description: "Continuous improvement drives our commitment to manufacturing excellence"
-                },
-                {
-                  icon: Users,
-                  title: "Expert Team",
-                  description: "Skilled quality assurance professionals oversee every manufacturing process"
-                }
+                 {
+      icon: CheckCircle,
+      title: "Smart Inventory",
+      description: "Real-time tracking and optimized warehousing keep stock organized and always ready to ship"
+    },
+    {
+      icon: Shield,
+      title: "Secure Packaging",
+      description: "Every product is carefully packed to prevent damage and ensure safe delivery"
+    },
+    {
+      icon: Award,
+      title: "On-Time Shipping",
+      description: "Streamlined logistics guarantee fast, reliable, and on-schedule deliveries worldwide"
+    },
+    {
+      icon: Users,
+      title: "Customer-Focused",
+      description: "Dedicated fulfillment experts manage each step to provide a seamless customer experience"
+    }
               ].map((feature, index) => (
                 <Card key={index} className="group hover:shadow-xl transition-all duration-300 border-0 shadow-lg hover:scale-105">
                   <CardContent className="p-8 text-center">

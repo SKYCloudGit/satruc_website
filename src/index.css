@@ -133,7 +133,7 @@
   }
 }
 
-/* Preloading images */
+/* Preloading assets */
 .image-transition {
   transition: filter 0.5s ease, transform 0.4s ease;
 }

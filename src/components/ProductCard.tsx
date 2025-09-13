@@ -5,7 +5,7 @@ interface ProductProps {
   id: string;
   name: string;
   description: string;
-  src: { image: string; desc: string }[]; // ✅ Array of images with descriptions
+  src: { image: string; desc: string }[]; // ✅ Array of assets with descriptions
   features: string[];
   category: string;
   isNew?: boolean;
@@ -30,6 +30,7 @@ const ProductCard: React.FC<ProductProps> = ({
             <img
               src={img.image}
               alt={`Image ${index + 1}`}
+              loading='lazy'
               className="w-full h-72 object-cover rounded-lg shadow-md transition-transform hover:scale-105"
             />
             {/* Description Box at the Bottom Right Corner */}
