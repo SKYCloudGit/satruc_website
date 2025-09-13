@@ -21,6 +21,7 @@ import {
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import "./Navbar.css";
+import Logo from "../assets/satruc_logo.png";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -118,10 +119,7 @@ const Navbar = () => {
   return (
     <header
       className={cn(
-        "fixed top-0 left-0 w-full z-50 transition-all duration-300",
-        shouldUseDarkText
-          ? "bg-gradient-radial from-black/80 via-black/90 to-black backdrop-blur-md py-4 shadow-sm text-black"
-          : "bg-transparent py-6 text-white"
+        "fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-white"
       )}
     >
       <div className="w-full px-4 md:px-6 relative z-50">
@@ -131,11 +129,18 @@ const Navbar = () => {
               to="/"
               className={cn(
                 "flex items-center space-x-2 text-2xl font-bold tracking-tight transition-colors duration-300",
-                shouldUseDarkText ? "text-black" : "text-white"
+                shouldUseDarkText ? "text-black" : "text-black"
               )}
             >
               {/* <Globe className="w-6 h-6" style={{ color: "green" }} /> */}
-              <span>SATRUC</span>
+              <span>
+                <img
+                  className="w-27 h-14"
+                  src={Logo}
+                  alt="satruc"
+                  loading="lazy"
+                />
+              </span>
             </Link>
 
             {/* Desktop Nav */}
@@ -152,7 +157,7 @@ const Navbar = () => {
                     <button
                       className={cn(
                         "flex items-center text-sm font-medium px-4 py-2 uppercase hover:text-blue-600",
-                        shouldUseDarkText ? "text-black" : "text-white"
+                        shouldUseDarkText ? "text-black" : "text-black"
                       )}
                     >
                       {item.name}
@@ -163,7 +168,7 @@ const Navbar = () => {
                       to={item.href}
                       className={cn(
                         "text-sm font-medium px-4 py-2 uppercase hover:text-satruc-600",
-                        shouldUseDarkText ? "text-black" : "text-white"
+                        shouldUseDarkText ? "text-black" : "text-black"
                       )}
                     >
                       {item.name}

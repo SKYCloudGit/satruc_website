@@ -2,12 +2,15 @@ import React from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import FeatureGrid from "@/components/FeaturesGrid";
+import ceo from "../assets/Dinesh.jpeg";
+import team1 from "../assets/OurTeam.jpeg";
+import team2 from "../assets/OurTeam2.jpeg";
 
 const leadershipTeam = [
   {
     name: "Dinesh Bhutada",
     position: "Chief Executive Officer",
-    image: "assets/Dinesh.jpeg",
+    image: ceo,
     bio: "",
   },
 
@@ -18,13 +21,13 @@ const teamMembers = [
   {
     name: "",
     position: "QA Team",
-    image: "../src/assets/OurTeam.jpeg",
+    image: team1,
     bio: "Michael specializes in frontend development and user experience design.",
   },
   {
     name: "",
     position: " Designe and Development",
-    image: "../src/assets/OurTeam2.jpeg",
+    image: team2,
     bio: "Emily crafts intuitive and engaging user interfaces for our applications.",
   },
 
@@ -75,7 +78,7 @@ const OurTeam = () => {
               {/* Image */}
               <div className="w-full flex justify-center">
                 <img
-                  src="../src/assets/Dinesh.jpeg"
+                  src={ceo}
                   alt="CEO"
                   loading="lazy"
                   className="w-full max-w-sm rounded-lg shadow-md object-cover"

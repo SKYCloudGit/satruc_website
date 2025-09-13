@@ -17,6 +17,7 @@ import { cn } from "@/lib/utils";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import FeatureGrid from "@/components/FeaturesGrid";
+import factory from "../assets/satruc.jpeg";
 
 const About = () => {
   // Animate sections as they come into view
@@ -148,7 +149,7 @@ const About = () => {
             <div className="order-1 lg:order-2 relative">
               <div className="relative rounded-xl overflow-hidden shadow-xl">
                 <img
-                  src="../src/assets/satruc.jpeg"
+                  src={factory}
                   alt="Satruc Manufacturing Facility"
                   className="w-full h-auto"
                   loading="lazy"
@@ -404,7 +405,7 @@ const About = () => {
               <div className="space-y-4">
                 <div className="rounded-lg overflow-hidden shadow-sm h-48 md:h-64">
                   <img
-                    src="../src/assets/satruc.jpeg"
+                    src={factory}
                     alt="Manufacturing facility"
                     loading="lazy"
                     className="w-full h-full object-cover"
